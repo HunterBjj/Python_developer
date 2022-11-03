@@ -19,8 +19,5 @@ if n1 > 2147483647:
         print(f"{n1}->0")
     
     
-elif n1 & n2 >= 0:
-    print(f"+{n2}")
-else:
-    print(f"-{n2}")
+print("{0:+}".format(n2))
 
