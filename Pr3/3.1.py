@@ -1,6 +1,6 @@
 
 num = int(input("Введите целое число "))
-if ( num%3 == 0 and num%5 == 0 ):
+if ( num%3 == 0 and num%5 == 0 ): # % -> module numbers
     print("Fizz Buzz")
 
 elif(num%3==0):
