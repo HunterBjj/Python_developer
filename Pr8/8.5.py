@@ -11,19 +11,20 @@ x % 5 -> (x / 5) + 93
 -> x / 2
 """
 def foo(arg):
-    if arg == 0:
-        return -10
-    elif arg % 3 == 0 and arg % 5 == 0:
-        return 45, (num / 5) + 93
-    elif arg % 3 == 0:
-        return 45
-    elif arg % 5 == 0:
-        return (arg / 5) + 93
-    else:
-        return arg / 2
+    stop = arg + 1
+    for arg in range(stop):
+        if arg == 0:
+            yield -10
+        elif arg % 3 == 0 and arg % 5 == 0:
+            yield 45, (num / 5) + 93
+        elif arg % 3 == 0:
+            yield 45
+        elif arg % 5 == 0:
+            yield (arg / 5) + 93
+        else:
+            yield arg / 2
 
 
 num = int(input("Введите число "))
-stop = num + 1
-result = [foo(i) for i in range(stop)]
-print(result)
+func_res = list(foo(num))
+print(func_res)
