@@ -18,4 +18,5 @@ int_num1 = list(map(int, num1))
 num2 = input("Enter number2 ").split()
 int_num2 = list(map(int, num2))
 res = union_num(int_num1, int_num2)
+
 print(res)
