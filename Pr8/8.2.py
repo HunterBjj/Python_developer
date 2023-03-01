@@ -5,6 +5,6 @@
 Пример: ['Tina', 'Raj', 'Tom'], результат: [4, 3, 3]
 """
 txt = ['Tina', 'Raj', 'Tom']
-len_txt = map(lambda world: len(world), txt)
+result = list(map(len, txt))
 
-print(list(len_txt))
+print(result)
