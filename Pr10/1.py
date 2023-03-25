@@ -29,8 +29,7 @@ class Friends:
         return False
 
     def connected_set(self, element=None):
-        if element in self.connection:
-
+        for i in range()
         return set()
 
 
