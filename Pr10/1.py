@@ -25,7 +25,21 @@ class Friends:
             return True
         return False
 
-    def names_set(self, element=None):
+    def names_set(self, connection=None):  # Нуждается в рефакторинге(
+        set_iteration = []
+        result = []
+        for i in self.connection:
+            set_iteration.extend(i)
+        result_repid = {}
+        for i in set_iteration:
+            if i not in result_repid:
+                result_repid[i] = 1
+            else:
+                result_repid[i] += 1
+        for key in result_repid:
+            if result_repid[key] > 1:
+               result.append(key)
+        return result
         return False
 
     def connected_set(self, element=None):  # Виталий Александрович, подскадите, пожалуйста, как решить боллее эффективно этот метод, а то плохая ассимптотическая сложность
@@ -42,9 +56,31 @@ class Friends:
 
 
 f = Friends([{"1", "2"}, {"3", "1"}])
-result = f.add_set({"2", "1"})
-print(result)
-result2 = f.connected_set("1")
-print(result2)
+#result = f.add_set({"2", "1"})
+#print(result)
+#result2 = f.connected_set("1")
+#print(result2)
+#set_key = {}
+test = ({"1", "2"}, {"3", "1"})
 
+result = f.names_set()
+print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           # if not set_key[value]:
+           #     set_key[value] = 0
+           # else:
+            #    set_key[value] += 1
 
