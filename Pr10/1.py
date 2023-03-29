@@ -54,14 +54,14 @@ class Friends:
             connected_res[i].remove(element)
         return connected_res
 
-
+# Для проверки работоспособности класса, рскоментируйте код
 f = Friends([{"1", "2"}, {"3", "1"}])
 #result = f.add_set({"2", "1"})
 #print(result)
 #result2 = f.connected_set("1")
 #print(result2)
 #set_key = {}
-test = ({"1", "2"}, {"3", "1"})
+#test = ({"1", "2"}, {"3", "1"})
 
 result = f.names_set()
 print(result)
