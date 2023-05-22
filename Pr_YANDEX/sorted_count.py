@@ -20,4 +20,4 @@ def count_char(text):
 
 
 result = count_char(text)
-print(f'{result:}')
+print(f'\n {result}')
