@@ -8,6 +8,6 @@
 def last_element(seq, num):
     arg = -1
     for i in range(len(seq)):
-        if seq == num[i]:
+        if num == seq[i]:
             arg = i
     return i
