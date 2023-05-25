@@ -17,6 +17,3 @@ def max_max2(seq):
 
     return max_num, next_max
 
-seq = [1, 2, 3, 4, 5, 6, 7 , 22, 145, 1]
-result = max_max2(seq)
-print(result)
